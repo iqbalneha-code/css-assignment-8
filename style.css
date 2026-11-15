@@ -124,7 +124,7 @@ button {
 
 .sec {
     max-width: 1600px;
-    height: 800px;
+    height: 1000px;
     margin: auto;
 }
 
@@ -252,12 +252,17 @@ h1 span {
 }
 .container{
      display: flex;
+     flex-direction: column;
      justify-content: center;
+     align-items: center;
 margin-top: 50px;
 
 }
 
-
+.form-bg{
+    margin: auto;
+    background-color: rgb(168, 56, 56);
+}
 
 @media (max-width: 900px) {
     .head {
