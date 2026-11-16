@@ -1,4 +1,10 @@
-
+:root {
+    --primary: #e60023;
+    --dark: #101b38;
+    --light: #f4f7fc;
+    --white: #ffffff;
+    --text: #555f70;
+}
 
 * {
     margin: 0;
@@ -32,13 +38,7 @@ img {
     max-width: 100%;
 }
 
-:root {
-    --primary: #e60023;
-    --dark: #101b38;
-    --light: #f4f7fc;
-    --white: #ffffff;
-    --text: #555f70;
-}
+
 
 
 
