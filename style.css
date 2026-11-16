@@ -124,17 +124,24 @@ button {
 
 .sec {
     max-width: 1600px;
-    height: 1000px;
+    height: auto;
+    min-height: 100vh;
     margin: auto;
 }
 
 .left {
-    width: 50%;
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    top: 0;
+    /* width: 50%; */
     display: flex;
     gap: 10px;
-    position: absolute;
-    top: 10%;
+    /* position: absolute;
+    top: 10%; */
     flex-wrap: wrap;
+        /* line-height: 50px; */
+
 }
 
 .text {
@@ -149,7 +156,8 @@ button {
 h1 {
     color: white;
     font-weight: bolder;
-    line-height: 50px;
+    line-height: 80px;
+    font-size: 50px;
 }
 
 h1 span {
@@ -265,6 +273,102 @@ margin-top: 50px;
 }
 
 @media (max-width: 900px) {
+
+    .head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .sec {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left {
+        position: relative;
+        width: 100%;
+        top: 0;
+        padding: 30px 20px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .corner1,
+    .corner2 {
+        display: none;
+    }
+
+    .border-b {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content p {
+        display: none;
+    }
+
+    .number {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .left {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .num1 {
+        padding: 12px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+}
+
+/* @media (max-width: 900px) {
     .head {
         flex-direction: column;
     }
@@ -320,7 +424,7 @@ margin-top: 50px;
 
 
 
-}
+} */
 
 @keyframes light {
     0% {
